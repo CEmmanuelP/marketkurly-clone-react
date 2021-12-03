@@ -17,7 +17,7 @@ const Main = () => {
                     <div className="item item1">
                         <div>
                             <img
-                                src="	https://img-cf.kurly.com/shop/data/goods/1622449761455l0.jpg"
+                                src="https://img-cf.kurly.com/shop/data/goods/1622449761455l0.jpg"
                                 width="249"
                                 height="320"
                             />
@@ -711,37 +711,37 @@ const Main = () => {
                 <h3 className="tit_good">인스타그램 고객 후기</h3>
                 <div className="list">
                     <img
-                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/260237969_327276355501351_734275350004537154_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=F7HkKCELZ7QAX8--lt8&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=ea05c7cd0d2596d84a14ad8ae79113fa&oe=61A7AE2B"
+                        src="https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277__480.jpg"
                         className="instagram_image"
                         width="175px"
                         height="175px"
                     />
                     <img
-                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/260437799_202210045401576_4050885884915373799_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=P9t0R0a4odYAX9J5zJJ&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=50194dea3219e8bb2e8a649ceea77366&oe=61A5D18E"
+                        src="https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467__340.jpg"
                         className="instagram_image"
                         width="175px"
                         height="175px"
                     />
                     <img
-                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/259733970_208377744789659_6406606949522628211_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=CRBaKEEMiLIAX-qN53R&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=a690ef14fa7e50e4a5d2ef23ee0e1f78&oe=61A82A26"
+                        src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg"
                         className="instagram_image"
                         width="175px"
                         height="175px"
                     />
                     <img
-                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/257924153_3038157329792519_830201424381460263_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=jTqBIXB4wwwAX9_Y6VU&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=796b1fe9275e85e06d0e4313bfa6dea5&oe=61A741F3"
+                        src="https://cdn.pixabay.com/photo/2021/11/01/15/52/spring-roll-6760871__340.jpg"
                         className="instagram_image"
                         width="175px"
                         height="175px"
                     />
                     <img
-                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/257513596_122141326919809_2187351873345345985_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=mkeEBfap0BIAX-zF5rI&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=a146a36470de25e907ef630c4ef84e92&oe=61A7338A"
+                        src="https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305__340.jpg"
                         className="instagram_image"
                         width="175px"
                         height="175px"
                     />
                     <img
-                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/256901300_421420482809940_5921444578841075053_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=mS5bjuKIK_4AX_LhNC-&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=1d2e93f1e0b34d2b2d59b1db32cca627&oe=61A8C423"
+                        src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552__340.jpg"
                         className="instagram_image"
                         width="175px"
                         height="175px"
