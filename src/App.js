@@ -5,15 +5,15 @@ import Login from "./Login";
 import Main from "./Main";
 
 function App() {
-    return (
-        <>
-            <Header />
-            <Main />
-            {/* <Detail /> */}
-            {/* <Login /> */}
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Main />
+      {/* <Detail /> */}
+      {/* <Login /> */}
+      <Footer />
+    </>
+  );
 }
 
 export default App;
