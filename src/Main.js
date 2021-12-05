@@ -1,116 +1,24 @@
 import CategoryList from "./CategoryList";
 import ProductContainer from "./ProductContainer";
+import {
+  data_main2,
+  data_main4,
+  categoryList,
+  data_main6,
+  data_main7,
+  data_main8,
+  data_main9,
+} from "./Data";
+import { useEffect, useState } from "react";
 
 const Main = () => {
-  const data_main2 = {
-    title: "이 상품 어때요?",
-    products: [
-      {
-        id: 1,
-        name: "[선물세트] 김정환홍삼 6년근 홍삼액",
-        price: "77,900원",
-        dc: "5%",
-        cost: "82,000원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1622449761455l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-      {
-        id: 2,
-        name: "[요미요미] 유기농 주스 6종 (4개입)",
-        price: "77,900원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1637512014306l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-      {
-        id: 3,
-        name: "[선물세트] 송강당 대명 공진보",
-        price: "156,750원",
-        dc: "5%",
-        cost: "165,000원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1621562863979l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-      {
-        id: 4,
-        name: "[우리밀] 백밀가루 & 옛밀가루",
-        price: "77,900원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1465267181723l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-    ],
-  };
+  const [data2, setData2] = useState();
 
-  const data_main4 = {
-    title: "놓치면 후회할 가격",
-    title_class: "ico",
-    products: [
-      {
-        id: 1,
-        name: "[경복궁 BLACK] 사골 도가니탕",
-        price: "9,350원",
-        dc: "15%",
-        cost: "11,000원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1591339034884l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-      {
-        id: 2,
-        name: "[탄단지] 닭가슴살 소시지 3종",
-        price: "1,440원",
-        dc: "20%",
-        cost: "1,800원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1624501914632l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-      {
-        id: 3,
-        name: "[아티제] 에쉬레 롤케이크",
-        price: "17,850원",
-        dc: "15%",
-        cost: "21,000원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1631855382110l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-      {
-        id: 4,
-        name: "[바이탈뷰티] 이지슬립(14일분)",
-        price: "15,750원",
-        dc: "55%",
-        cost: "35,000원",
-        img: "https://img-cf.kurly.com/shop/data/goods/1619156324892l0.jpg",
-        img_width: "249",
-        img_height: "320",
-      },
-    ],
-  };
-
-  const categoryList = [
-    "채소",
-    "과일·견과·쌀",
-    "수산·해산·건어물",
-    "정육·계란",
-    "국·반찬·메인요리",
-    "샐러드·간편식",
-    "면·양념·오일",
-    "생수·음료·우유·커피",
-    "간식·과자·떡",
-    "베이커리·치즈·델리",
-    "건강식품",
-    "생활용품·리빙·캠핑",
-    "스킨케어·메이크업",
-    "헤어·바디·구강",
-    "주방용품",
-    "가전제품",
-    "베이비·키즈·완구",
-    "반려동물",
-  ];
+  useEffect(() => {
+    setTimeout(() => {
+      setData2(data_main2);
+    }, 2000);
+  }, []);
 
   return (
     <div id="main">
@@ -126,7 +34,14 @@ const Main = () => {
         />
       </div>
       <div className="main2">
-        <ProductContainer data={data_main2} />
+        {data2 ? (
+          <ProductContainer data={data2} />
+        ) : (
+          <div className="loader_container">
+            <div className="loader"></div>
+          </div>
+        )}
+        {/* <ProductContainer data={data_main2} /> */}
       </div>
       <div className="main3">
         <h3 className="tit_good">
@@ -275,286 +190,22 @@ const Main = () => {
         />
       </div>
       <div className="main6">
-        <h3 className="tit_good">
-          <span className="ico">지금 가장 핫한 상품</span>
-        </h3>
-        <div className="products">
-          <div className="item item1">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1637922815195l0.jpeg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">춘천 감자빵 오리지널</span>
-              <span className="price"> 16,000원 </span>
-            </div>
-          </div>
-          <div className="item item2">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1606197214582l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[강남면옥] 사골만두칼국수</span>
-              <span className="price"> 8,800원 </span>
-            </div>
-          </div>
-          <div className="item item3">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1563242231409l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[고메공방] 미친 치즈돈까스</span>
-              <span className="price"> 14,900원 </span>
-            </div>
-          </div>
-          <div className="item item4">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1637924309442l0.jpeg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[YOZM] 플레인 그릭요거트 2종</span>
-              <span className="price"> 3,900원 </span>
-            </div>
-          </div>
-        </div>
+        <ProductContainer data={data_main6} />
       </div>
       <div
         className="main7"
         style={{ "background-color": "rgb(247, 247, 247)" }}
       >
-        <h3 className="tit_good">
-          <span className="ico">홈파티, 특가로 한번에 준비</span>
-        </h3>
-        <div className="products">
-          <div className="item item1">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1637922063492l0.jpeg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[인스탁스] 즉석카메라 3종</span>
-              <span className="price">
-                <span className="dc">3%</span>
-                33,465원
-              </span>
-              <span className="cost">34,500원</span>
-            </div>
-          </div>
-          <div className="item item2">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1616392394254l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">
-                [마크토마스] 더블벤드 와인 글라스 세트 7종
-              </span>
-              <span className="price">
-                <span className="dc">15%</span>
-                142,800원
-              </span>
-              <span className="cost">168,000원</span>
-            </div>
-          </div>
-          <div className="item item3">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1563242231409l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[캐논] 인스틱P 3종</span>
-              <span className="price">
-                <span className="dc">5%</span>
-                24,605원
-              </span>
-              <span className="cost">25,900원</span>
-            </div>
-          </div>
-          <div className="item item4">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1626686244824l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[위글위글] 파티 캔들 8종</span>
-              <span className="price">
-                <span className="dc">20%</span>
-                3,840원
-              </span>
-              <span className="cost">4,800원</span>
-            </div>
-          </div>
-        </div>
+        <ProductContainer data={data_main7} />
       </div>
       <div
         className="main8"
         style={{ "background-color": "rgb(247, 247, 247)" }}
       >
-        <h3 className="tit_good">
-          <span className="ico">365일 최저가 도전</span>
-          <span className="tit_desc">최저가 도전, 365일 언제나 알뜰하게</span>
-        </h3>
-        <div className="products">
-          <div className="item item1">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1600665398350l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">
-                [이호] 국산 관자 슬라이스 150g 내외(생물)
-              </span>
-              <span className="price">
-                <span className="dc">10%</span>
-                11,700원
-              </span>
-              <span className="cost">13,000원</span>
-            </div>
-          </div>
-          <div className="item item2">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1637154770299l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[KF365] 양파 1.8kg</span>
-              <span className="price"> 3,840원 </span>
-            </div>
-          </div>
-          <div className="item item3">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1637936357585l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">
-                [KF365] GAP 실속 '햇' 부사 사과 1.5kg(5~8입)
-              </span>
-              <span className="price">
-                <span className="dc">20%</span>
-                7,192원
-              </span>
-              <span className="cost">8,990원</span>
-            </div>
-          </div>
-          <div className="item item4">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1637147561308l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">
-                [KF365] 한돈 삼겹살 구이용 600g (냉장)
-              </span>
-              <span className="price"> 12,540원 </span>
-            </div>
-          </div>
-        </div>
+        <ProductContainer data={data_main8} />
       </div>
       <div className="main9">
-        <h3 className="tit_good">
-          <span className="ico">컬리가 만든 상품</span>
-          <span className="tit_desc">퀄리티는 높게, 가격은 합리적으로</span>
-        </h3>
-        <div className="products">
-          <div className="item item1">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1632810469444l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">[Kurly's] 한돈 삼겹 베이컨</span>
-              <span className="price"> 3,700원 </span>
-            </div>
-          </div>
-          <div className="item item2">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1615273846898l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">
-                [Kurly's] 샌드위치용 달걀감자 샐러드 120g
-              </span>
-              <span className="price"> 2,000원 </span>
-            </div>
-          </div>
-          <div className="item item3">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1622536776317l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">
-                [Kurly's] 고기 왕만두 (1,050g/지퍼백)
-              </span>
-              <span className="price"> 8,900원 </span>
-            </div>
-          </div>
-          <div className="item item4">
-            <div>
-              <img
-                src="https://img-cf.kurly.com/shop/data/goods/1637921593602l0.jpg"
-                width="249"
-                height="320"
-              />
-            </div>
-            <div className="item_description">
-              <span className="name">
-                [Kurly's] 고소하게 구운 도시락 김 12봉
-              </span>
-              <span className="price"> 3,900원 </span>
-            </div>
-          </div>
-        </div>
+        <ProductContainer data={data_main9} />
       </div>
       <div className="main10">
         <h3 className="tit_good">

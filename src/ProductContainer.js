@@ -9,9 +9,10 @@ const ProductContainer = ({ data }) => {
         ) : (
           data.title
         )}
+        {data.title_desc && <span className="tit_desc">{data.title_desc}</span>}
       </h3>
       <div className="products">
-        {data.products.map((product, i) => {
+        {data.products.map((product) => {
           return <ProductItem key={product.id} product={product} />;
         })}
       </div>
