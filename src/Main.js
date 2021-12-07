@@ -10,6 +10,7 @@ import {
   data_main9,
 } from "./Data";
 import { useEffect, useState } from "react";
+import Carousel from "./Carousel";
 
 const Main = () => {
   const [data2, setData2] = useState();
@@ -22,17 +23,7 @@ const Main = () => {
 
   return (
     <div id="main">
-      <div
-        className="main1"
-        style={{ "margin-left": "5px", "margin-right": "5px" }}
-      >
-        <img
-          src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1637311387.jpg"
-          width="100%"
-          height="370"
-          alt="banner"
-        />
-      </div>
+      <Carousel />
       <div className="main2">
         {data2 ? (
           <ProductContainer data={data2} />

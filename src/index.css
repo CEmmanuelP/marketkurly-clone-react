@@ -1607,3 +1607,61 @@ a {
   line-height: 51px;
   text-align: center;
 }
+
+.carousel-container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel {
+  display: none;
+  width: 100%;
+  height: 320px;
+}
+
+/* .carousel-container .slide {
+  animation-name: slidein;
+  animation-duration: 1.5s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+
+.carousel-container .carousel-prev {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 100;
+  width: 52px;
+  height: 52px;
+  border: 0px;
+  outline: 0px;
+  margin-left: -590px;
+  transition: all 0.5s ease 0s;
+  background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_left_52_52.svg)
+    50% 50% no-repeat;
+}
+
+.carousel-container .carousel-next {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 100;
+  width: 52px;
+  height: 52px;
+  border: 0px;
+  outline: 0px;
+  margin-left: 570px;
+  background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_right_52_52.svg)
+    50% 50% no-repeat;
+}
