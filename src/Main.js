@@ -16,6 +16,7 @@ const Main = () => {
   const [data2, setData2] = useState();
 
   useEffect(() => {
+    console.log("main useEffect");
     setTimeout(() => {
       setData2(data_main2);
     }, 2000);
