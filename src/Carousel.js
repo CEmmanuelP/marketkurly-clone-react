@@ -1,16 +1,44 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Carousel.css";
+import SlideItem from "./SlideItem";
 
 const Carousel = () => {
-  useEffect(() => {
-    console.log("Carousel useEffect");
+  const slide_url = [
+    {
+      id: 1,
+      url: "https://img-cf.kurly.com/shop/data/main/1/pc_img_1637311387.jpg",
+    },
+    {
+      id: 2,
+      url: "https://img-cf.kurly.com/banner/main/pc/img/2abed505-2b13-4d4d-878d-98ab6b8bee7a",
+    },
+    {
+      id: 3,
+      url: "https://img-cf.kurly.com/banner/main/pc/img/01bb8bfc-e6b1-4a96-9d67-5afa1df161da",
+    },
+    {
+      id: 4,
+      url: "https://img-cf.kurly.com/banner/main/pc/img/8aea0f43-a2c9-465f-bf74-db2936017e24",
+    },
+  ];
 
+  const [bnrUrls, setBnrUrls] = useState([]);
+  const slider = useRef();
+  const sliderItems = useRef();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setBnrUrls(slide_url);
+    }, 2000);
+  });
+
+  useEffect(() => {
     const slider = document.getElementById("slider");
     const sliderItems = document.getElementById("slides");
     const prev = document.getElementById("prev");
     const next = document.getElementById("next");
 
-    slide(slider, sliderItems, prev, next);
+    // slide(slider, sliderItems, prev, next);
   });
 
   const slide = (wrapper, items, prev, next) => {
@@ -84,13 +112,15 @@ const Carousel = () => {
       id="slider"
       className="slider"
       style={{ "margin-left": "5px", "margin-right": "5px" }}
+      ref={slider}
     >
       <div className="wrapper">
         <button id="prev" className="carousel-prev"></button>
-        <div id="slides" className="slides">
-          <div className="slide" style={{ outline: "none", width: "100%" }}>
-            1
-          </div>
+        <div id="slides" className="slides" ref={sliderItems}>
+          {bnrUrls &&
+            bnrUrls.map((url) => {
+              return <SlideItem key={url.id} url={url.url} />;
+            })}
           <div className="slide">2</div>
           <div className="slide">3</div>
           <div className="slide">4</div>

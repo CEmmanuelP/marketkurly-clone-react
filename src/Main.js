@@ -11,6 +11,7 @@ import {
 } from "./Data";
 import { useEffect, useState } from "react";
 import Carousel from "./Carousel";
+import Loading from "./Loading";
 
 const Main = () => {
   const [data2, setData2] = useState();
@@ -26,13 +27,7 @@ const Main = () => {
     <div id="main">
       <Carousel />
       <div className="main2">
-        {data2 ? (
-          <ProductContainer data={data2} />
-        ) : (
-          <div className="loader_container">
-            <div className="loader"></div>
-          </div>
-        )}
+        {data2 ? <ProductContainer data={data2} /> : <Loading />}
         {/* <ProductContainer data={data_main2} /> */}
       </div>
       <div className="main3">
