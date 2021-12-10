@@ -33,15 +33,16 @@ const Carousel = () => {
     });
 
     useEffect(() => {
-        console.log("carousel useEffect");
         cloneSlide();
     }, []);
 
     const cloneSlide = () => {
         // const slides = sliderItems.current.getElementsByClassName("slide");
+        const children = [...sliderItems.current.childNodes];
 
         console.log(sliderItems.current);
         console.log(sliderItems.current.childNodes);
+        console.log(children);
 
         if (sliderItems.current.hasChildNodes()) {
             console.log("hasChildNode");
