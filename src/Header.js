@@ -1,6 +1,9 @@
+import TopBanner from "./TopBanner";
+
 const Header = () => {
     return (
         <div id="header">
+            <TopBanner />
             <div id="headerHeader">
                 <div className="bnr_delivery">
                     <a href="#">

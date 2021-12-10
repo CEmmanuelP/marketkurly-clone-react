@@ -1,82 +1,81 @@
 .slider {
-  border: 1px solid black;
-  position: relative;
-  overflow: hidden;
-  margin: auto;
-  min-width: 1050px;
-  width: 100%;
-  height: 320px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    min-width: 1050px;
+    width: 100%;
+    height: 320px;
 }
 
 .wrapper {
-  border: 1px solid greenyellow;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 320px;
+    border: 1px solid greenyellow;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 320px;
 }
 
 .slides {
-  border: 1.5px solid red;
-  display: flex;
-  position: relative;
-  top: 0;
-  width: 50000px;
-  height: 320px;
+    border: 1.5px solid red;
+    display: flex;
+    position: relative;
+    top: 0;
+    height: 320px;
 }
 
 .slide {
-  /* min-width: 1050px; */
-  width: 100%;
-  height: 320px;
-  transition: all 1s;
+    /* min-width: 1050px; */
+    width: 100%;
+    height: 320px;
+    transition: all 1s;
 }
 
 .slide:nth-child(1) {
-  background-image: url(https://img-cf.kurly.com/shop/data/main/1/pc_img_1637311387.jpg);
-  border: 1px solid yellow;
+    background-image: url(https://img-cf.kurly.com/shop/data/main/1/pc_img_1637311387.jpg);
+    border: 1px solid yellow;
 }
 
 .slide:nth-child(2) {
-  background-image: url(https://img-cf.kurly.com/banner/main/pc/img/2abed505-2b13-4d4d-878d-98ab6b8bee7a);
-  border: 1px solid yellow;
+    background-image: url(https://img-cf.kurly.com/banner/main/pc/img/2abed505-2b13-4d4d-878d-98ab6b8bee7a);
+    border: 1px solid yellow;
 }
 
 .slide:nth-child(3) {
-  background-image: url(https://img-cf.kurly.com/banner/main/pc/img/01bb8bfc-e6b1-4a96-9d67-5afa1df161da);
-  border: 1px solid yellow;
+    background-image: url(https://img-cf.kurly.com/banner/main/pc/img/01bb8bfc-e6b1-4a96-9d67-5afa1df161da);
+    border: 1px solid yellow;
 }
 
 .slide:nth-child(4) {
-  background-image: url(https://img-cf.kurly.com/banner/main/pc/img/8aea0f43-a2c9-465f-bf74-db2936017e24);
-  border: 1px solid yellow;
+    background-image: url(https://img-cf.kurly.com/banner/main/pc/img/8aea0f43-a2c9-465f-bf74-db2936017e24);
+    border: 1px solid yellow;
 }
 
 .slider .carousel-prev {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  z-index: 100;
-  width: 52px;
-  height: 52px;
-  border: 0px;
-  outline: 0px;
-  margin-left: -590px;
-  transition: all 0.5s ease 0s;
-  background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_left_52_52.svg)
-    50% 50% no-repeat;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 100;
+    width: 52px;
+    height: 52px;
+    border: 0px;
+    outline: 0px;
+    margin-left: -590px;
+    transition: all 0.5s ease 0s;
+    background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_left_52_52.svg)
+        50% 50% no-repeat;
 }
 
 .slider .carousel-next {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  z-index: 100;
-  width: 52px;
-  height: 52px;
-  border: 0px;
-  outline: 0px;
-  margin-left: 570px;
-  background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_right_52_52.svg)
-    50% 50% no-repeat;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 100;
+    width: 52px;
+    height: 52px;
+    border: 0px;
+    outline: 0px;
+    margin-left: 570px;
+    background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_right_52_52.svg)
+        50% 50% no-repeat;
 }
