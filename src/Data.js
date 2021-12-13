@@ -45,7 +45,7 @@ const data_main4 = {
   title_class: "ico",
   products: [
     {
-      id: 1,
+      id: 5,
       name: "[경복궁 BLACK] 사골 도가니탕",
       price: "9,350원",
       dc: "15%",
@@ -55,7 +55,7 @@ const data_main4 = {
       img_height: "320",
     },
     {
-      id: 2,
+      id: 6,
       name: "[탄단지] 닭가슴살 소시지 3종",
       price: "1,440원",
       dc: "20%",
@@ -65,7 +65,7 @@ const data_main4 = {
       img_height: "320",
     },
     {
-      id: 3,
+      id: 7,
       name: "[아티제] 에쉬레 롤케이크",
       price: "17,850원",
       dc: "15%",
@@ -75,7 +75,7 @@ const data_main4 = {
       img_height: "320",
     },
     {
-      id: 4,
+      id: 8,
       name: "[바이탈뷰티] 이지슬립(14일분)",
       price: "15,750원",
       dc: "55%",
@@ -113,7 +113,7 @@ const data_main6 = {
   title_class: "ico",
   products: [
     {
-      id: 1,
+      id: 9,
       name: "춘천 감자빵 오리지널",
       price: "16,000원",
       img: "https://img-cf.kurly.com/shop/data/goods/1637922815195l0.jpeg",
@@ -121,7 +121,7 @@ const data_main6 = {
       img_height: "320",
     },
     {
-      id: 2,
+      id: 10,
       name: "[강남면옥] 사골만두칼국수",
       price: "8,800원",
       img: "https://img-cf.kurly.com/shop/data/goods/1606197214582l0.jpg",
@@ -129,7 +129,7 @@ const data_main6 = {
       img_height: "320",
     },
     {
-      id: 3,
+      id: 11,
       name: "[고메공방] 미친 치즈돈까스",
       price: "14,900원",
       img: "https://img-cf.kurly.com/shop/data/goods/1563242231409l0.jpg",
@@ -137,7 +137,7 @@ const data_main6 = {
       img_height: "320",
     },
     {
-      id: 4,
+      id: 12,
       name: "[YOZM] 플레인 그릭요거트 2종",
       price: "3,900원",
       img: "https://img-cf.kurly.com/shop/data/goods/1637924309442l0.jpeg",
@@ -153,7 +153,7 @@ const data_main7 = {
   title_desc: "퀄리티는 높게, 가격은 합리적으로",
   products: [
     {
-      id: 1,
+      id: 13,
       name: "[인스탁스] 즉석카메라 3종",
       price: "33,465원",
       dc: "3%",
@@ -163,7 +163,7 @@ const data_main7 = {
       img_height: "320",
     },
     {
-      id: 2,
+      id: 14,
       name: "[마크토마스] 더블벤드 와인 글라스 세트 7종",
       price: "142,800원",
       dc: "15%",
@@ -173,7 +173,7 @@ const data_main7 = {
       img_height: "320",
     },
     {
-      id: 3,
+      id: 15,
       name: "[캐논] 인스틱P 3종",
       price: "24,605원",
       dc: "5%",
@@ -183,7 +183,7 @@ const data_main7 = {
       img_height: "320",
     },
     {
-      id: 4,
+      id: 16,
       name: "[위글위글] 파티 캔들 8종",
       price: "3,840원",
       dc: "20%",
@@ -201,7 +201,7 @@ const data_main8 = {
   title_desc: "최저가 도전, 365일 언제나 알뜰하게",
   products: [
     {
-      id: 1,
+      id: 17,
       name: "[이호] 국산 관자 슬라이스 150g 내외(생물)",
       price: "11,700원",
       dc: "10%",
@@ -211,7 +211,7 @@ const data_main8 = {
       img_height: "320",
     },
     {
-      id: 2,
+      id: 18,
       name: "[KF365] 양파 1.8kg",
       price: "3,840원",
       img: "https://img-cf.kurly.com/shop/data/goods/1637154770299l0.jpg",
@@ -219,7 +219,7 @@ const data_main8 = {
       img_height: "320",
     },
     {
-      id: 3,
+      id: 19,
       name: "[KF365] GAP 실속 '햇' 부사 사과 1.5kg(5~8입)",
       price: "7,192원",
       dc: "20%",
@@ -229,7 +229,7 @@ const data_main8 = {
       img_height: "320",
     },
     {
-      id: 4,
+      id: 20,
       name: "[KF365] 한돈 삼겹살 구이용 600g (냉장)",
       price: "12,540원",
       img: "https://img-cf.kurly.com/shop/data/goods/1637147561308l0.jpg",
@@ -245,7 +245,7 @@ const data_main9 = {
   title_desc: "퀄리티는 높게, 가격은 합리적으로",
   products: [
     {
-      id: 1,
+      id: 21,
       name: "[Kurly's] 한돈 삼겹 베이컨",
       price: "3,700원",
       img: "https://img-cf.kurly.com/shop/data/goods/1632810469444l0.jpg",
@@ -253,7 +253,7 @@ const data_main9 = {
       img_height: "320",
     },
     {
-      id: 2,
+      id: 22,
       name: "[Kurly's] 샌드위치용 달걀감자 샐러드 120g",
       price: "2,000원",
       img: "https://img-cf.kurly.com/shop/data/goods/1615273846898l0.jpg",
@@ -261,7 +261,7 @@ const data_main9 = {
       img_height: "320",
     },
     {
-      id: 3,
+      id: 23,
       name: "[Kurly's] 고기 왕만두 (1,050g/지퍼백)",
       price: "8,900원",
       img: "https://img-cf.kurly.com/shop/data/goods/1622536776317l0.jpg",
@@ -269,7 +269,7 @@ const data_main9 = {
       img_height: "320",
     },
     {
-      id: 4,
+      id: 24,
       name: "[Kurly's] 고소하게 구운 도시락 김 12봉",
       price: "3,900원",
       img: "https://img-cf.kurly.com/shop/data/goods/1637921593602l0.jpg",
@@ -279,6 +279,59 @@ const data_main9 = {
   ],
 };
 
+const product_best = [
+  {
+    id: 101,
+    name: "[남향푸드또띠아] 간편 간식 브리또 10종",
+    price: "2,900원",
+    img: "https://img-cf.kurly.com/shop/data/goods/1622449761455l0.jpg",
+    description: "가볍고 든든한 멕시칸 푸드",
+    tags: [],
+  },
+  {
+    id: 102,
+    name: "[연세우유 x 마켓컬리] 전용목장우유 900mL",
+    price: "1,850원",
+    img: "https://img-cf.kurly.com/shop/data/goods/1637154205701l0.jpg",
+    description: "가격, 퀄리티 모두 만족스러운 1A등급 우유",
+    tags: ["Kurly Only", "재활용 우수"],
+  },
+  {
+    id: 103,
+    name: "[KF365] 김구원선생 국내산 무농약 콩나물 300g",
+    price: "900원",
+    img: "https://img-cf.kurly.com/shop/data/goods/1637155075625l0.jpg",
+    description: "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+    tags: ["Kurly Only"],
+  },
+  {
+    id: 104,
+    name: "[KF365] 애호박 1개",
+    price: "1,750원",
+    img: "https://img-cf.kurly.com/shop/data/goods/1637154502152l0.jpg",
+    description: "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+    tags: ["Kurly Only", "재활용 우수"],
+  },
+  {
+    id: 105,
+    name: "[미트클레버] 한돈 떡갈비",
+    price: "2,790원",
+    dc: "10%",
+    cost: "3,100원",
+    img: "https://img-cf.kurly.com/shop/data/goods/1637927339676l0.jpg",
+    description: "간편하게 즐기는 도톰한 떡갈비",
+    tags: ["Kurly Only"],
+  },
+  {
+    id: 106,
+    name: "[하림] 냉장 닭가슴살 4종",
+    price: "1,700원",
+    img: "https://img-cf.kurly.com/shop/data/goods/1633588725320l0.jpg",
+    description: "간편하게 꺼내먹는 냉장 닭가슴살!",
+    tags: [],
+  },
+];
+
 export {
   data_main2,
   data_main4,
@@ -287,4 +340,5 @@ export {
   data_main8,
   data_main9,
   categoryList,
+  product_best,
 };

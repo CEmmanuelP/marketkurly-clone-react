@@ -13,3 +13,7 @@ export const PageArticle = styled.div`
   width: 1050px;
   margin: 0 auto;
 `;
+
+export const GoodsList = styled.div`
+  display: grid;
+`;

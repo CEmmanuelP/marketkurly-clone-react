@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import TopBanner from "../../TopBanner";
 
 const Header = () => {
@@ -22,9 +22,9 @@ const Header = () => {
             </a>
           </div>
           <div className="menu menu_login">
-            <a href="#" className="link_menu">
+            <NavLink to="/login" className="link_menu">
               로그인
-            </a>
+            </NavLink>
           </div>
           <div className="menu menu_cs">
             <a href="#" className="link_menu">

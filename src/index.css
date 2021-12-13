@@ -46,6 +46,10 @@ body {
   text-decoration: none;
 }
 
+#userMenu a.active {
+  color: #5f0080;
+}
+
 #userMenu a:hover {
   color: black;
   background-color: transparent;
