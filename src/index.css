@@ -137,6 +137,20 @@ body {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .top_banner {
+    display: none;
+  }
+
+  #headerHeader {
+    display: none;
+  }
+
+  #gnb .gnb_main .menu1 {
+    display: none;
+  }
+}
+
 #gnb .gnb_main .menu1 a {
   width: 168px;
 }
