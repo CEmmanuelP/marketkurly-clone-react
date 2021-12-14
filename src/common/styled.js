@@ -16,7 +16,7 @@ export const PageArticle = styled.div`
 
 export const GoodsList = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 17px;
     width: 100%;
 `;
