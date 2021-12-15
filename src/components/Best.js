@@ -9,16 +9,6 @@ import { NavLink } from "react-router-dom";
 import SelectType from "./SelectType";
 
 const Best = () => {
-    const tit = {
-        paddingTop: "23px",
-        fontWeight: "700",
-        fontSize: "28px",
-        color: "#333",
-        lineHeight: "35px",
-        letterSpacing: "-1px",
-        textAlign: "center",
-    };
-
     const selectTypeList = [
         "추천순",
         "신상품순",
@@ -44,7 +34,7 @@ const Best = () => {
                     <PageArticle>
                         <div style={{ paddingTop: "26px" }}>
                             <div style={{ position: "relative" }}>
-                                <h3 style={tit}>베스트</h3>
+                                <h3 className="best_title">베스트</h3>
                             </div>
                         </div>
                         <div>
@@ -94,6 +84,10 @@ const ListWrapper = styled.div`
     justify-content: space-between;
     padding-top: 19px;
     font-size: 11px;
+
+    @media only screen and (max-width: 420px) {
+        display: none;
+    }
 `;
 
 const ListTypeWrapper = styled.div`

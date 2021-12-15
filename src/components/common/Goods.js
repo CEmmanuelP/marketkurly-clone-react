@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import styled from "styled-components";
 
 const Goods = ({ goods }) => {
+    useEffect(() => {}, []);
+
     return (
         <>
             <Item>
@@ -15,7 +17,9 @@ const Goods = ({ goods }) => {
                 </Thumb>
                 <Info>
                     <ItemName>{goods.name}</ItemName>
+                    {goods.dc ? <ItemDc>{goods.dc}</ItemDc> : ""}
                     <ItemPrice>{goods.price}</ItemPrice>
+                    {goods.cost ? <ItemCost>{goods.cost}</ItemCost> : ""}
                     <ItemDesc>{goods.description}</ItemDesc>
                     <ItemTag>
                         {goods.tags.length ? (
@@ -56,6 +60,10 @@ const Thumb = styled.div`
     width: 100%;
     height: 435px;
     background-color: #f9f9f9;
+
+    @media only screen and (max-width: 420px) {
+        height: 410px;
+    }
 `;
 
 const Thumbnail = styled.a`
@@ -68,14 +76,24 @@ const Thumbnail = styled.a`
     background-image: url(${(props) => props.src});
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media only screen and (max-width: 420px) {
+        width: 90%;
+        margin-left: 5%;
+    }
 `;
 
 const Info = styled.a`
     display: block;
     padding: 14px 10px 10px 0;
+
+    @media only screen and (max-width: 420px) {
+        padding: 14px 14px 10px 14px;
+    }
 `;
 
 const ItemName = styled.span`
+    display: block;
     overflow: hidden;
     max-height: 58px;
     font-weight: 400;
@@ -84,11 +102,25 @@ const ItemName = styled.span`
     line-height: 29px;
 `;
 
+const ItemDc = styled.span`
+    font-size: 20px;
+    font-weight: 500;
+    color: #fa622f;
+    padding-right: 5px;
+`;
+
 const ItemPrice = styled.span`
-    display: block;
     padding-top: 7px;
     font-size: 18px;
     line-height: 29px;
+`;
+
+const ItemCost = styled.span`
+    display: block;
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+    padding-top: 3px;
 `;
 
 const ItemDesc = styled.span`
