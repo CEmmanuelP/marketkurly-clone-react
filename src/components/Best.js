@@ -7,6 +7,9 @@ import Goods from "./common/Goods";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import SelectType from "./SelectType";
+import { useDispatch } from "react-redux";
+import { languageAction } from "../store/redux";
+import { useSelector } from "react-redux";
 
 const Best = () => {
     const selectTypeList = [
@@ -19,6 +22,7 @@ const Best = () => {
     ];
 
     const [goods, setGoods] = useState([]);
+    const { language, explain } = useSelector((state) => state.languageReducer);
 
     useEffect(() => {
         setTimeout(() => {
@@ -26,6 +30,17 @@ const Best = () => {
             console.log(goods.length);
         }, 1000);
     });
+
+    const dispatch = useDispatch();
+
+    const changeAction = () => {
+        dispatch(
+            languageAction({
+                language: "python",
+                explain: "very easy language",
+            })
+        );
+    };
 
     return (
         <>
@@ -70,7 +85,17 @@ const Best = () => {
                                     <Loading />
                                 )}
                             </GoodsList>
-                            <div className="layout-pagination"></div>
+                            <div className="layout-pagination">
+                                <LayoutPagination>
+                                    <PagenationButton img_src="https://res.kurly.com/pc/etc/old/images/common/icon-pagination-first.png"></PagenationButton>
+                                    <PagenationButton img_src="https://res.kurly.com/pc/etc/old/images/common/icon-pagination-prev.png"></PagenationButton>
+                                    <PagenationButton bg_color="#f7f7f7">
+                                        1
+                                    </PagenationButton>
+                                    <PagenationButton img_src="	https://res.kurly.com/pc/etc/old/images/common/icon-pagination-next.png"></PagenationButton>
+                                    <PagenationButton img_src="https://res.kurly.com/pc/etc/old/images/common/icon-pagination-last.png"></PagenationButton>
+                                </LayoutPagination>
+                            </div>
                         </div>
                     </PageArticle>
                 </Content>
@@ -93,6 +118,26 @@ const ListWrapper = styled.div`
 const ListTypeWrapper = styled.div`
     display: flex;
     justify-content: space-around;
+`;
+
+const LayoutPagination = styled.div`
+    font-weight: 400;
+    text-align: center;
+`;
+
+const PagenationButton = styled.a`
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    background-image: url(${(props) => props.img_src});
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: ${(props) => props.bg_color};
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 30px;
 `;
 
 export default Best;

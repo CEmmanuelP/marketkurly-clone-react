@@ -19,6 +19,8 @@ export const PageArticle = styled.div`
 
     @media only screen and (max-width: 768px) {
         width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 `;
 
