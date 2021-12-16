@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import languageReducer from "./redux";
+import shoppingBasketReducer from "./redux";
 
 const rootReducer = combineReducers({
-    languageReducer,
+  shoppingBasketReducer,
 });
 
 export default rootReducer;

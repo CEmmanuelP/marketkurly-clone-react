@@ -1,30 +1,27 @@
-const initialState = {
-    language: "react",
-    explain: "make web library",
+const initialState = {};
+
+export const shoppingBasketAction = (data) => {
+  return {
+    type: "PRODUCT",
+    data: data,
+  };
 };
 
-export const languageAction = (data) => {
-    return {
-        type: "LANGUAGE",
-        data: data,
-    };
-};
-
-const languageReducer = (state = initialState, action) => {
-    switch (action.type) {
-        case "LANGUAGE": {
-            return {
-                ...state,
-                language: action.data.language,
-                explain: action.data.explain,
-            };
-        }
-        default: {
-            return {
-                ...state,
-            };
-        }
+const shoppingBasketReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "PRODUCT": {
+      return {
+        ...state,
+        id: action.data.id,
+        name: action.data.name,
+      };
     }
+    default: {
+      return {
+        ...state,
+      };
+    }
+  }
 };
 
-export default languageReducer;
+export default shoppingBasketReducer;
