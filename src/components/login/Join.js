@@ -14,7 +14,9 @@ const Join = () => {
                             <RowWrapper>
                                 <RowTitle>아이디</RowTitle>
                                 <RowInput placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합" />
-                                <RowButton>중복확인</RowButton>
+                                <RowButton leftMargin="10px">
+                                    중복확인
+                                </RowButton>
                             </RowWrapper>
                             <RowWrapper>
                                 <RowTitle>비밀번호</RowTitle>
@@ -31,21 +33,22 @@ const Join = () => {
                             <RowWrapper>
                                 <RowTitle>이메일</RowTitle>
                                 <RowInput />
-                                <RowButton>중복확인</RowButton>
+                                <RowButton leftMargin="10px">
+                                    중복확인
+                                </RowButton>
                             </RowWrapper>
                             <RowWrapper>
                                 <RowTitle>휴대폰</RowTitle>
                                 <RowInput />
-                                <RowButton>인증번호 받기</RowButton>
+                                <RowButton leftMargin="10px">
+                                    인증번호 받기
+                                </RowButton>
                             </RowWrapper>
                             <RowWrapper>
                                 <RowTitle>주소</RowTitle>
-                                <RowButton>주소 검색</RowButton>
-                            </RowWrapper>
-                            <RowWrapper>
-                                <RowTitle>아이디</RowTitle>
-                                <RowInput />
-                                <RowButton>중복확인</RowButton>
+                                <RowButton leftMargin="0px">
+                                    주소 검색
+                                </RowButton>
                             </RowWrapper>
                         </form>
                     </JoinFormWrapper>
@@ -114,7 +117,7 @@ const RowButton = styled.button`
     background-color: #fff;
     color: #5f0080;
     width: 120px;
-    margin-left: 10px;
+    margin-left: ${(props) => props.leftMargin};
     border-radius: 3px;
     height: 40px;
     font-weight: 600;
