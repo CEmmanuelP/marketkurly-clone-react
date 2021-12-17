@@ -127,4 +127,6 @@ const RowButton = styled.button`
     outline: none;
 `;
 
+const SearchIcon = styled.span``;
+
 export default Join;
