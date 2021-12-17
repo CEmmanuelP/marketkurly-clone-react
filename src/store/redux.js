@@ -1,27 +1,24 @@
-const initialState = {};
-
-export const shoppingBasketAction = (data) => {
-  return {
-    type: "PRODUCT",
-    data: data,
-  };
+export const cartAction = (data) => {
+    console.log(data);
+    return {
+        type: "ADD_PRODUCT",
+        cart: {
+            id: data.id,
+            name: data.name,
+        },
+    };
 };
 
-const shoppingBasketReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "PRODUCT": {
-      return {
-        ...state,
-        id: action.data.id,
-        name: action.data.name,
-      };
+const cartReducer = (state = [], action) => {
+    console.log(action);
+    switch (action.type) {
+        case "ADD_PRODUCT": {
+            return state.concat(action.cart);
+        }
+        default: {
+            return state;
+        }
     }
-    default: {
-      return {
-        ...state,
-      };
-    }
-  }
 };
 
-export default shoppingBasketReducer;
+export default cartReducer;

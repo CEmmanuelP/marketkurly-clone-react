@@ -46,8 +46,8 @@ const Join = () => {
                             </RowWrapper>
                             <RowWrapper>
                                 <RowTitle>주소</RowTitle>
-                                <RowButton leftMargin="0px">
-                                    주소 검색
+                                <RowButton leftMargin="0px" width="330px">
+                                    <span>주소 검색</span>
                                 </RowButton>
                             </RowWrapper>
                         </form>
@@ -116,7 +116,7 @@ const RowButton = styled.button`
     border: 1px solid #5f0080;
     background-color: #fff;
     color: #5f0080;
-    width: 120px;
+    width: ${(props) => (props.width ? props.width : "120px")};
     margin-left: ${(props) => props.leftMargin};
     border-radius: 3px;
     height: 40px;

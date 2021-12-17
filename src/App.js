@@ -5,6 +5,7 @@ import Login from "./components/login/Login";
 import Main from "./Main";
 import Best from "./components/Best";
 import Join from "./components/login/Join";
+import Cart from "./components/cart/Cart";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                         <Route path="login" element={<Login />} />
                         <Route path="best" element={<Best />} />
                         <Route path="join" element={<Join />} />
+                        <Route path="cart" element={<Cart />} />
                     </Routes>
                 </Layout>
             </BrowserRouter>
