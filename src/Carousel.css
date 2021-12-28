@@ -31,7 +31,7 @@
     transition: all 1s;
 }
 
-.slide:nth-child(1) {
+/* .slide:nth-child(1) {
     background-image: url(https://img-cf.kurly.com/shop/data/main/1/pc_img_1637311387.jpg);
     border: 1px solid yellow;
 }
@@ -49,7 +49,7 @@
 .slide:nth-child(4) {
     background-image: url(https://img-cf.kurly.com/banner/main/pc/img/8aea0f43-a2c9-465f-bf74-db2936017e24);
     border: 1px solid yellow;
-}
+} */
 
 .slider .carousel-prev {
     position: absolute;
