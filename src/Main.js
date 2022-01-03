@@ -10,7 +10,6 @@ import {
     data_main9,
 } from "./Data";
 import { useEffect, useState } from "react";
-import Carousel from "./Carousel";
 import Loading from "./Loading";
 import ReactSlickCarousel from "./ReactSlickCarousel";
 
@@ -36,7 +35,7 @@ const Main = () => {
                 </h3>
                 <div className="products">
                     <div className="item item1">
-                        <div>
+                        <div className="inner_item">
                             <img
                                 src="https://img-cf.kurly.com/shop/data/main/3/pc_img_1637752813.jpg"
                                 width="338"
@@ -49,7 +48,7 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="item item1">
-                        <div>
+                        <div className="inner_item">
                             <img
                                 src="https://img-cf.kurly.com/shop/data/main/3/pc_img_1637754220.jpg"
                                 width="338"
@@ -64,7 +63,7 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="item item1">
-                        <div>
+                        <div className="inner_item">
                             <img
                                 src="https://img-cf.kurly.com/shop/data/main/3/pc_img_1637754224.jpg"
                                 width="338"

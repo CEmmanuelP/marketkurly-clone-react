@@ -5,6 +5,7 @@ const SlideItem = ({ url }) => {
             style={{
                 outline: "none",
                 width: "100%",
+                height: "320px",
                 backgroundImage: `url(${url})`,
             }}
         ></div>

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Carousel.css";
 import SlideItem from "./SlideItem";
-import Slider from "react-slick";
 
 const Carousel = () => {
     const slide_url = [
