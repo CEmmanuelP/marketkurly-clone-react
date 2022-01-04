@@ -1067,6 +1067,8 @@ body {
 
 .goods-view-information {
   margin-top: 50px;
+
+  scroll-behavior: smooth;
 }
 
 .goods-view-information-tab-group {
@@ -1542,6 +1544,11 @@ table.extra-information td {
   height: 17px;
   background: url(https://res.kurly.com/pc/service/order/1908/ico_checkbox_off.png)
     no-repeat 50% 50%;
+}
+.section_login .label_checkbox.checked:before {
+  background: url(https://res.kurly.com/pc/service/order/1908/ico_checkbox_on_x2.png)
+    no-repeat 50% 50%;
+  background-size: 16px 17px;
 }
 
 .section_login .label_checkbox input[type="checkbox"] {

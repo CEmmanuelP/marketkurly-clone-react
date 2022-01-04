@@ -49,15 +49,6 @@ function SamplePrevArrow(props) {
 }
 
 export default class CustomArrows extends Component {
-  constructor(props) {
-    super(props);
-    this.slickRef = React.createRef();
-  }
-
-  componentDidMount() {
-    console.log(this.slickRef.current);
-  }
-
   render() {
     const slide_url = [
       {

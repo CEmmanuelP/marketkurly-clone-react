@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Detail = () => {
   return (
     <>
@@ -190,23 +192,35 @@ const Detail = () => {
           <div className="goods-view-tab">
             <ul className="goods-view-information-tab-group">
               <li className="goods-view-information-tab">
-                <a href="#" className="goods-view-information-tab-anchor">
+                <a
+                  href="#goods-description"
+                  className="goods-view-information-tab-anchor"
+                >
                   상품설명
                 </a>
               </li>
               <li className="goods-view-information-tab">
-                <a href="#" className="goods-view-information-tab-anchor">
+                <a
+                  href="#goods-information"
+                  className="goods-view-information-tab-anchor"
+                >
                   상세정보
                 </a>
               </li>
               <li className="goods-view-information-tab goods-view-review-tab">
-                <a href="#" className="goods-view-information-tab-anchor">
+                <a
+                  href="#goods-review"
+                  className="goods-view-information-tab-anchor"
+                >
                   후기
                   <span className="count_review">(216)</span>
                 </a>
               </li>
               <li className="goods-view-information-tab">
-                <a href="#" className="goods-view-information-tab-anchor">
+                <a
+                  href="#goods-qna"
+                  className="goods-view-information-tab-anchor"
+                >
                   문의
                 </a>
               </li>
