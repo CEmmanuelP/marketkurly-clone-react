@@ -16,6 +16,9 @@ const Goods = ({ goods }) => {
             cartAction({
                 id: goods.id,
                 name: goods.name,
+                img: goods.img,
+                price: goods.price,
+                desc: goods.description,
             })
         );
     };

@@ -5,6 +5,19 @@ export const cartAction = (data) => {
         cart: {
             id: data.id,
             name: data.name,
+            img: data.img,
+            price: data.price,
+            desc: data.desc,
+        },
+    };
+};
+
+export const deleteAction = (id) => {
+    console.log(id);
+    return {
+        type: "DELETE_PRODUCT",
+        cart: {
+            id: id.id,
         },
     };
 };
@@ -14,6 +27,9 @@ const cartReducer = (state = [], action) => {
     switch (action.type) {
         case "ADD_PRODUCT": {
             return state.concat(action.cart);
+        }
+        case "DELETE_PRODUCT": {
+            return state.filter((element) => element.id !== action.cart.id);
         }
         default: {
             return state;

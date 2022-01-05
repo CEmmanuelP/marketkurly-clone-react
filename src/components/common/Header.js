@@ -95,7 +95,7 @@ const Header = () => {
                         </div>
                         <div className="cart_count">
                             <div className="inner_cartcount">
-                                <a href="cart" className="btn_cart"></a>
+                                <Link to="cart" className="btn_cart"></Link>
                             </div>
                         </div>
                     </div>
