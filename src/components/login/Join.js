@@ -24,8 +24,10 @@ const Join = () => {
         console.log(eventCheckedItems);
         if (eventCheckedItems.length >= 2) {
             setIsAllEventChecked(true);
+            setCheckedItems([...checkedItems, "event"]);
         } else {
             setIsAllEventChecked(false);
+            setCheckedItems(checkedItems.filter((el) => el !== "event"));
         }
     }, [eventCheckedItems]);
 
@@ -52,6 +54,7 @@ const Join = () => {
                 "age",
                 "event",
             ]);
+            setEventCheckedItems([...eventCheckedItems, "sms", "email"]);
             // 하나라도 체크가 안되어있을 경우
         } else if (
             (!checked && checkedItems.includes("provision")) ||
@@ -61,6 +64,7 @@ const Join = () => {
             (!checked && checkedItems.includes("event"))
         ) {
             setCheckedItems([]);
+            setEventCheckedItems([]);
         }
     };
 
