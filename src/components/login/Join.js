@@ -20,9 +20,28 @@ const Join = () => {
         }
     }, [checkedItems]);
 
+    useEffect(() => {
+        console.log(eventCheckedItems);
+        if (eventCheckedItems.length >= 2) {
+            setIsAllEventChecked(true);
+        } else {
+            setIsAllEventChecked(false);
+        }
+    }, [eventCheckedItems]);
+
+    const allEventAgreeHandler = (checked) => {
+        setIsAllEventChecked(!isAllEventChecked);
+        if (checked) {
+            setEventCheckedItems([...eventCheckedItems, "sms", "email"]);
+        } else if (
+            (!checked && eventCheckedItems.includes("sms")) ||
+            (!checked && eventCheckedItems.includes("email"))
+        ) {
+            setEventCheckedItems([]);
+        }
+    };
+
     const allAgreeHandler = (checked) => {
-        console.log("allAgreeHandler");
-        console.log(checked);
         setIsAllChecked(!isAllChecked);
         if (checked) {
             setCheckedItems([
@@ -44,6 +63,7 @@ const Join = () => {
             setCheckedItems([]);
         }
     };
+
     const agreeHandler = (checked, value) => {
         console.log(checked);
         console.log(value);
@@ -55,13 +75,24 @@ const Join = () => {
     };
 
     const eventAgreeHandler = (checked, value) => {
-        console.log(checked);
-        console.log(value);
         if (checked) {
             // 전체 체크된 아이템 목록에 value값 추가
             setCheckedItems([...checkedItems, value]);
         } else if (!checked && checkedItems.includes(value)) {
             setCheckedItems(checkedItems.filter((el) => el !== value));
+        }
+    };
+
+    const eventItemHandler = (checked, value) => {
+        console.log(checked);
+        console.log(value);
+        if (checked) {
+            // 전체 체크된 아이템 목록에 value값 추가
+            setEventCheckedItems([...eventCheckedItems, value]);
+        } else if (!checked && eventCheckedItems.includes(value)) {
+            setEventCheckedItems(
+                eventCheckedItems.filter((el) => el !== value)
+            );
         }
     };
 
@@ -375,12 +406,15 @@ const Join = () => {
                                                 name="agree"
                                                 label="이용약관"
                                                 value="event"
-                                                onChange={(e) =>
+                                                onChange={(e) => {
                                                     eventAgreeHandler(
                                                         e.currentTarget.checked,
                                                         e.target.value
-                                                    )
-                                                }
+                                                    );
+                                                    allEventAgreeHandler(
+                                                        e.currentTarget.checked
+                                                    );
+                                                }}
                                                 checked={
                                                     checkedItems.includes(
                                                         "event"
@@ -400,6 +434,20 @@ const Join = () => {
                                                     type="checkbox"
                                                     name="sms"
                                                     value="sms"
+                                                    onChange={(e) => {
+                                                        eventItemHandler(
+                                                            e.currentTarget
+                                                                .checked,
+                                                            e.target.value
+                                                        );
+                                                    }}
+                                                    checked={
+                                                        eventCheckedItems.includes(
+                                                            "sms"
+                                                        )
+                                                            ? true
+                                                            : false
+                                                    }
                                                 />
                                                 <span className="ico"></span>
                                                 SMS
@@ -409,6 +457,20 @@ const Join = () => {
                                                     type="checkbox"
                                                     name="mailling"
                                                     value="email"
+                                                    onChange={(e) => {
+                                                        eventItemHandler(
+                                                            e.currentTarget
+                                                                .checked,
+                                                            e.target.value
+                                                        );
+                                                    }}
+                                                    checked={
+                                                        eventCheckedItems.includes(
+                                                            "email"
+                                                        )
+                                                            ? true
+                                                            : false
+                                                    }
                                                 />
                                                 <span className="ico"></span>
                                                 EMAIL
